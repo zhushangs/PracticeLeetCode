@@ -8,11 +8,11 @@ class Solution {
         Map<Integer, Integer> map = new HashMap<>();
         //loop through the array
         for (int i = 0; i < nums.length; i++) {
-            //get the other number in the array
+            //get the value of x
             int x = target - nums[i];
-            //try to find this the other number is in the array
+            //try to find x is in the array
             if (map.containsKey(x)) {
-                //if it is in they array, return a new array which are index of those two number
+                //if x is in they array, return a new array which are index of those two number
                 return new int[]{i, map.get(x)};
             }
             //store value and index into map, key = current number, value = index of current number
